@@ -22,6 +22,10 @@
   font-family: 'Roboto', sans-serif;
   outline: none; }
 
+body {
+  background-color: #d7d5cf;
+  color: #6e211a; }
+
 ul, li, a {
   list-style: none;
   text-decoration: none; }
@@ -37,8 +41,8 @@ img {
   margin-right: auto; }
 
 .wrapper-nav {
-  background-color: #212529;
-  color: #f8f9fa;
+  background-color: #e29207;
+  color: #6e211a;
   box-shadow: 10px 10px 21px #d3d3d6; }
 
 .nav {
@@ -50,20 +54,26 @@ img {
   .nav-logo {
     font-family: 'MasonChronicles', serif;
     font-size: 42px;
-    line-height: 18px; }
+    line-height: 18px;
+    transition: all 0.5s ease 0s; }
+    .nav-logo a {
+      transition: all 0.5s ease 0s; }
     .nav-logo a:hover {
-      color: #d1d1d1;
-      transition-duration: .3s; }
+      color: #d7d5cf;
+      transition: all 0.5s ease 0s; }
   .nav a {
-    color: #f8f9fa; }
+    color: #6e211a; }
   .nav-list {
     display: flex; }
     .nav-list__item {
-      margin-left: 40px;
-      font-size: 20px; }
+      margin-left: 70px;
+      font-size: 25px;
+      transition: all 0.5s ease 0s; }
+      .nav-list__item a {
+        transition: all 0.5s ease 0s; }
       .nav-list__item a:hover {
-        color: #d1d1d1;
-        transition-duration: .3s;
+        color: #d7d5cf;
+        transition: all 0.5s ease 0s;
         text-decoration: underline; }
 
 .slider-wrapper {
@@ -296,6 +306,16 @@ button {
   .menu__btn {
     display: flex; } }
 
+.main-text {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 900px;
+  text-align: center;
+  font-size: 24px; }
+  @media (max-width: 768px) {
+    .main-text {
+      font-size: 18px; } }
+
 .main-cards:not(:last-child) {
   border-bottom: 3px solid #404040; }
 
@@ -304,12 +324,14 @@ button {
   .main-cards__item:not(:last-child) {
     border-bottom: 3px solid #404040; }
   .main-cards__item .img1 {
+    max-height: 80vh;
+    object-fit: cover;
     padding-left: 0;
     padding-right: 20px; }
   .main-cards__item .img2 {
     padding-right: 0;
     padding-left: 20px; }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .main-cards__item {
       padding: 30px 0 50px 0; }
       .main-cards__item .img1, .main-cards__item .img2 {
@@ -317,29 +339,29 @@ button {
       .main-cards__item .text1, .main-cards__item .text2 {
         padding: 0; } }
   .main-cards__item p {
-    color: #212529;
+    color: #6e211a;
     font-size: 33px;
     padding: 50px 25px 0;
     text-align: center; }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .main-cards__item .text1 {
       padding: 0;
       margin: 0;
       margin-bottom: 30px;
       align-self: center; } }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .main-cards__item .text2 {
       padding: 0;
       margin: 0;
       margin-bottom: 30px;
       align-self: center; } }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .main-cards .reverse {
     flex-direction: column-reverse; } }
 
 footer {
-  background-color: #212529;
+  background-color: #e29207;
   box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #d3d3d6;
   margin-top: 40px; }
 
@@ -351,8 +373,8 @@ footer {
   justify-content: space-between;
   font-size: 12px;
   line-height: 18px;
-  color: #f8f9fa; }
+  color: #6e211a; }
   .footer-wrapper .footer-copy span {
-    color: #f8f9fa; }
+    color: #6e211a; }
   .footer-wrapper .footer-dev span {
-    color: #d1d1d1; }
+    color: #524847; }
