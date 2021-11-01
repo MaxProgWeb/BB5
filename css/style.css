@@ -27,7 +27,7 @@ body {
   color: #6e211a;
   display: grid;
   min-height: 100vh;
-  //grid-template: minmax(80px, auto) 1fr minmax(70px, auto)/1fr; }//
+  grid-template: minmax(80px, auto) 1fr minmax(70px, auto)/1fr; }
 
 ul, li, a {
   list-style: none;
@@ -470,5 +470,3 @@ footer {
 
 .Adiya .descr {
   font-size: 24px; } 
-img {
-  max-width: 320px; } 
