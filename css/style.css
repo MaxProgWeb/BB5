@@ -27,7 +27,7 @@ body {
   color: #6e211a;
   display: grid;
   min-height: 100vh;
-  grid-template: minmax(80px, auto) 1fr minmax(70px, auto)/1fr; }
+  //grid-template: minmax(80px, auto) 1fr minmax(70px, auto)/1fr; }//
 
 ul, li, a {
   list-style: none;
@@ -365,7 +365,8 @@ button {
 
 footer {
   background-color: #e29207;
-  box-shadow: 10px 10px 21px #d3d3d6, -10px -10px 21px #d3d3d6;
+  box-shadow: 10px 10px 21px #d3d3d6,
+ -10px -10px 21px #d3d3d6;
   margin-top: 40px; }
 
 .footer-wrapper {
@@ -400,6 +401,7 @@ footer {
   color: #d7d5cf; }
 
 .card img {
+  width: 100%;
   border-top-left-radius: calc(1.25rem - 1px);
   border-top-right-radius: calc(1.25rem - 1px); }
 
